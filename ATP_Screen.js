@@ -247,7 +247,7 @@ export default function ATPScreen({ route, navigation }) {
   const lastSpeedRef = useRef(0);
 
   const { apiKey } = route?.params || {};
-  const geoApiKey = apiKey || "cdd25e128003407b8c836581f3bea685";
+  const geoApiKey = apiKey || "";
 
   // ---------- Geo helpers ----------
   const getCityFromCoords = async (lat, lon) => {
