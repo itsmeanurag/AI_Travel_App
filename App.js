@@ -31,9 +31,9 @@ import {
 import ATPScreen from "./ATP_Screen"; // <- Integrated ATP screen here
 
 // ======= CONSTS & UTILS =======
-const WEATHER_API_KEY = "806df16e1debfd430338d685e9bfa487";
-const GEOAPIFY_API_KEY = "cdd25e128003407b8c836581f3bea685";
-const AIR_API_KEY = "676df496ab6b9356fdad1b72758e1b104c57aa12";
+const WEATHER_API_KEY = "";
+const GEOAPIFY_API_KEY = "";
+const AIR_API_KEY = "";
 
 const MOCKED_BOOKMARKS = [
   { name: "Ahmedabad", address: "Ahmedabad, Gujarat", lat: 23.0225, lon: 72.5714 },
