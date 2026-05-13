@@ -70,7 +70,7 @@ export default function ATPScreen({ route, navigation }) {
         lastApiCallTimestamp.current = now;
 
         // Fetch Road Data
-        const key = apiKey || "cdd25e128003407b8c836581f3bea685";
+        const key = apiKey || "";
         const roadUrl = `https://api.geoapify.com/v1/revgeocode?lat=${lat}&lon=${lon}&apiKey=${key}`;
         try {
             const response = await axios.get(roadUrl);
@@ -132,7 +132,7 @@ export default function ATPScreen({ route, navigation }) {
     
     // This function will now be triggered by the background analysis
     const analyzeStop = async (point) => {
-        const key = apiKey || "cdd25e128003407b8c836581f3bea685";
+        const key = apiKey || "";
         const url = `https://api.geoapify.com/v2/places?categories=catering&filter=circle:${point.lon},${point.lat},100&limit=1&apiKey=${key}`;
         try {
             const response = await axios.get(url);
