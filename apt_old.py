@@ -49,7 +49,7 @@ export default function ATPScreen({ route, navigation }) {
     // --- API & ALGORITHM FUNCTIONS ---
     const getCityFromCoords = async (lat, lon) => {
         if (!hasStableGps) return 'Unknown';
-        const key = apiKey || "cdd25e128003407b8c836581f3bea685";
+        const key = apiKey || "";
         const url = `https://api.geoapify.com/v1/revgeocode?lat=${lat}&lon=${lon}&apiKey=${key}`;
         try {
             const response = await axios.get(url);
